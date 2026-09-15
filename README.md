@@ -5,7 +5,7 @@ A modular, sensor-fused micromouse built around the **STM32F401 "Black Pill"** M
 The robot is built as a **stack of custom PCB modules** — a black "core" stack (motor driver + sensor interconnect + MCU) that is fully finished and working, and a purple "add-on" stack (auxiliary sensor/IMU/power management boards) that is still a work in progress.
 
 ---
-[![Maze-solver robot](images/img1.png)](images/img1.png)
+[![Maze-solver](img/img1.png)](img/img1.png)
 [![Maze-solver robot](images/img2.png)](images/img2.png)
 ## 1. Hardware Overview
 
