@@ -5,7 +5,8 @@ A modular, sensor-fused micromouse built around the **STM32F401 "Black Pill"** M
 The robot is built as a **stack of custom PCB modules** — a black "core" stack (motor driver + sensor interconnect + MCU) that is fully finished and working, and a purple "add-on" stack (auxiliary sensor/IMU/power management boards) that is still a work in progress.
 
 ---
-
+[![Maze-solver robot](images/img1.png)](images/img1.png)
+[![Maze-solver robot](images/img2.png)](images/img2.png)
 ## 1. Hardware Overview
 
 | Component | Role |
@@ -26,6 +27,9 @@ The robot is built as a **stack of custom PCB modules** — a black "core" stack
 The chassis is built as a **stack of interlocking PCB modules**, each handling one subsystem. This modular approach made debugging and assembly easier, since each board could be tested independently before being stacked and wired together.
 
 ### ✅ Black PCB Stack — Finished, Module-Based Core
+[![Maze-solver](img/img3.png)](img/img3.png)
+[![Maze-solver](img/img4.png)](img/img4.png)
+[![Maze-solver robot](images/img5.png)](images/img5.png)
 This is the working heart of the robot:
 - **Top module** — STM32F401 "Black Pill" dev board, plugged into header rows, carrying USB, BOOT0/NRST buttons, and breaking out all GPIO used by the lower modules.
 - **Mid module (motor driver board)** — Houses the two DRV8833 driver ICs (labeled `U13`), regulator/protection circuitry, indicator LED (`LED5`), and 4 motor headers (`MOTOR5`–`MOTOR8`). Connects to the sensor headers (`SENS5`–`SENS8`) on its outer wings.
@@ -35,6 +39,9 @@ This is the working heart of the robot:
 This stack is fully assembled, soldered, wired, and functional — it's what actually drives the robot and reads the wall sensors today.
 
 ### 🚧 Purple PCB Stack — Auxiliary Boards, Not Fully Finished
+[![Maze-solver robot](images/img6.png)](images/img6.png)
+[![Maze-solver robot](images/img7.png)](images/img7.png)
+[![Maze-solver robot](images/img8.png)](images/img8.png)
 The purple boards are a secondary expansion stack meant to add more capability, but they are **only partially populated/assembled**:
 - One purple board carries a QFP-package MCU/sensor IC (`U1`), crystal (`X1`), decoupling caps, and a duplicate set of motor/sensor headers (`MOTOR1`–`MOTOR4`, `SENSE1`–`SENSE4`) — intended as a secondary driver/sensor expansion board.
 - A second purple board carries additional ICs (`U3`, `U9`), a trim potentiometer, and more tactile switches (`SW4`–`SW7`) for extra tuning/mode inputs.
