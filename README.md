@@ -26,7 +26,7 @@ The robot is built as a **stack of custom PCB modules** — a black "core" stack
 
 The chassis is built as a **stack of interlocking PCB modules**, each handling one subsystem. This modular approach made debugging and assembly easier, since each board could be tested independently before being stacked and wired together.
 
-### ✅ Black PCB Stack — Finished, Module-Based Core
+### Black PCB Stack — Finished, Module-Based Core
 [![Maze-solver](img/img3.jpeg)](img/img3.jpeg)
 [![Maze-solver](img/img4.jpeg)](img/img4.jpeg)
 [![Maze-solver](img/img5.jpeg)](img/img5.jpeg)
@@ -38,7 +38,7 @@ This is the working heart of the robot:
 
 This stack is fully assembled, soldered, wired, and functional — it's what actually drives the robot and reads the wall sensors today.
 
-### 🚧 Purple PCB Stack — Auxiliary Boards, Not Fully Finished
+### Purple PCB Stack — Auxiliary Boards, Not Fully Finished
 [![Maze-solver](img/img6.jpeg)](img/img6.jpeg)
 [![Maze-solver](img/img7.jpeg)](img/img7.jpeg)
 [![Maze-solver](img/img8.jpeg)](img/img8.jpeg)
@@ -76,16 +76,16 @@ On-board tactile buttons let you switch between modes (e.g., exploration mode, s
 
 ## 4. Key Features
 
-- 🧠 **Flood-Fill maze-solving algorithm** for exploration, with **A\*-style optimized path planning** for the final solved run
-- ↗️ **Diagonal movement support** for shorter, faster optimized paths
-- 🎛️ **On-board tactile buttons** for mode selection and live parameter tuning
-- 👁️ **IR/ToF (VL53L0X) sensors** for real-time wall detection
-- 🔄 **Quadrature encoders** on all 4 N20 motors for precise distance/speed tracking
-- 🧭 **MPU6050 IMU** for smooth, accurate, drift-corrected turning
-- 📐 **Kalman filter sensor fusion** combining gyro + accelerometer data for reliable heading
-- 🧩 **Modular PCB stack design** — motor driver, MCU, and sensor interconnect boards can be built/tested independently
-- 🔋 **Dual 2S LiPo power** for extended runtime
-- 💡 **Status LEDs** for mode/debug feedback
+- **Flood-Fill maze-solving algorithm** for exploration, with **A\*-style optimized path planning** for the final solved run
+- **Diagonal movement support** for shorter, faster optimized paths
+- **On-board tactile buttons** for mode selection and live parameter tuning
+- **IR/ToF (VL53L0X) sensors** for real-time wall detection
+- **Quadrature encoders** on all 4 N20 motors for precise distance/speed tracking
+- **MPU6050 IMU** for smooth, accurate, drift-corrected turning
+- **Kalman filter sensor fusion** combining gyro + accelerometer data for reliable heading
+- **Modular PCB stack design** — motor driver, MCU, and sensor interconnect boards can be built/tested independently
+- **Dual 2S LiPo power** for extended runtime
+- **Status LEDs** for mode/debug feedback
 
 ---
 
@@ -93,8 +93,8 @@ On-board tactile buttons let you switch between modes (e.g., exploration mode, s
 
 | Stack | Status |
 |---|---|
-| Black PCB stack (MCU + motor driver + sensor interconnect) | ✅ Finished, assembled, fully functional |
-| Purple PCB stack (auxiliary sensor/expansion boards) | 🚧 Fabricated but not fully populated/wired — work in progress |
+| Black PCB stack (MCU + motor driver + sensor interconnect) |  Finished, assembled, fully functional |
+| Purple PCB stack (auxiliary sensor/expansion boards) | Fabricated but not fully populated/wired — work in progress |
 
 ---
 
